@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step01_datatype.html</title>
+</head>
+<body>
+    <h1>데이터 타입 테스트 중...</h1>
+    <script>
+        //1. number type
+        //산술 연산이 가능하다
+        var num1=10; // int (정수)
+        //var: 변수를 처음 만들 때 붙이는 것
+        var num2=10.1; // float (실수)
+        // 정수와 실수를 합쳐서 넘버 타입이라고 한다.
+
+        //2. string type
+        //문자열을 다룰 때 사용하는 데이터 type
+        var myName= '길'; //single quotation
+        var yourName= "봉"; //double quotation
+
+        //3. boolean type
+        //참, 거짓을 나타내는 데이터 type
+        var isRun=true;
+        var isWai=false;
+        var isGreater= 10 > 1; //비교연산의 결과로 만들어지기도 한다.
+
+        //4. plain object type
+        var mem={num:1, name:"길", addr: "별내"};
+
+        //5. array type
+        var nums= [10,20,30];
+        var names= ["길","봉","심"];
+
+        //6. function type
+        var f1=function(){
+            console.log("하나");
+            console.log("두울");
+            console.log("세엣");
+        }
+        //7. undefined type
+        var a; //변수를 선언만 하면 undefined가 들어있다.
+        var b=undefined; //undefinend 예약어를 이용해서 만들기도 한다.
+
+    </script>
+</body>
+</html>
