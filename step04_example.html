@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example.html</title>
+</head>
+<body>
+    <h1> array 테스트 중... </h1>
+    <input type="text" id="msg" placeholder="할 일 입력...">
+    <button onclick="save()">저장하기</button>
+    <button onclick="show()">저장된 할 일 보기</button>
+    <p id="console"></p>
+    <script>
+        //페이지가 로딩되는 시점에 할일(문자열)을 저장할 배열 만들기
+        var msgs=[];
+        //저장 버튼을 누르면 호출되는 함수
+        function save(){
+            var line= document.querySelector("#msg").value;
+            msgs.push(line);
+            alert("저장되었습니다.");
+        // 입력한 내용 clear
+        document.querySelector("#msg").value="";
+        }
+        //저장된 내용 보기 누르면 호출되는 함수
+        function show(){
+            var todo="";
+            //배열에서 참조된 할 일을 저장할 변수
+            for(var i=0; i<msgs.length; i++){
+                //i번째 방에서 저장된 할 일을 읽어온다.
+            var line=msgs[i];
+            //todo에 저장된 문자열에 현재 읽어온 할 일을 이어붙이기
+            todo = todo + "·" + line;
+            }
+            //p요소에 출력하기
+            document.querySelector("#console").innerText=todo;
+        }
+    </script>
+</body>
+</html>
