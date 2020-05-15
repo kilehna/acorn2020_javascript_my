@@ -1,0 +1,10 @@
+@charset "utf-8";
+button{
+    background-color: transparent;
+    color: red;
+    border: transparent;
+}
+
+button:hover{
+    color: white;
+}

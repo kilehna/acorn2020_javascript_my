@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exit</title>
+    <link rel="stylesheet" href="button.css">
+    <style>
+        body{
+            background-color: black;
+            
+        }
+        h1{
+            color: red;
+        }
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>탈출 게임</h1>
+    <h2>첫번째 방</h2>
+    <img src="unnamed.jpg">
+    <embed src="♩♫ Epic Horror Synth Trailer Music ♪♬ - Something Wicked (Copyright and Royalty Free).mp3" autostart="true" hidden="true">
+    <p id="p1">눈을 떠보니 낯선 방 안에 갇힌 당신... 눈앞에는 소름끼치는 문 하나 뿐입니다.</p>
+    <p id="p2">문은 잠겨있지 않은 것 같습니다. 당신은 어떻게 하나요?</p>
+    <br>
+    <button id="one"> ☞ 문 밖으로 나간다</button>
+    <br>
+    <button id="two"> ☞ 나가지 않는다</button>
+
+    <script>
+        document.querySelector("#one").addEventListener("click",function(){
+            alert("과연 무사히 나갈 수 있을까?")
+            location.href="game2.html";
+        })
+
+        document.querySelector("#two").addEventListener("click", function(){
+            alert("겁쟁이 겁쟁이 겁쟁이 겁쟁이 겁쟁이 겁쟁이 겁쟁이 겁쟁이 겁쟁이 겁쟁이 겁쟁이 겁쟁이")
+            location.href="gameover.html";
+        })
+
+    </script>
+</body>
+</html>

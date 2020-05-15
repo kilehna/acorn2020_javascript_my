@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            border: 2px solid aquamarine;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>이벤트리스너 함수 테스트 3</h1>
+    <div class="box">div1</div>
+    <div class="box">div2</div>
+    <div class="box">div3</div>
+    <div class="box">div4</div>
+    <div class="box">div5</div>
+
+    <script>
+        var divs=document.querySelectorAll(".box");
+        for(var i=0; i<divs.length; i++){
+           divs[i].addEventListener("click",function(){
+                this.innerText = "클릭했네요?????"
+            });
+        }
+    </script>
+</body>
+</html>

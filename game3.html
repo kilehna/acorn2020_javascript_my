@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="button.css">
+    <style>
+        body{
+            background-color: black;
+            
+        }
+        h1{
+            color: red;
+        }
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>탈출게임</h1>
+    <h2>출구</h2>
+    <embed src="♩♫ Epic Horror Synth Trailer Music ♪♬ - Something Wicked (Copyright and Royalty Free).mp3" autostart="true" hidden="true">
+    <p>당신은 더 이상 이걸 만들기 귀찮아진 저의 농간으로 빠르게 출구를 발견했습니다!</p>
+    <p>바람이 부는 쪽으로 천천히 걷다보면 미세한 빛이 새어나오는 문을 발견합니다.</p>
+    <p>와~~ 축하해요!! 탈출 성공입니다!</p>
+    <br>
+    <button id="one">뭐냐 이 망겜은?</button>
+    <button id="two">존잼이니 다시 한다</button>
+
+    <script>
+        document.querySelector("#one").addEventListener("click",function(){
+            alert("어쨰럐걔~~~ 꼬우면 니걔 먠덀럐걔~~~~")
+            location.href="gameover.html";
+        })
+
+        document.querySelector("#two").addEventListener("click", function(){
+            alert("미쳤습니까 휴먼?")
+            location.href="game1.html";
+        })
+
+    </script>
+</body>
+</html>

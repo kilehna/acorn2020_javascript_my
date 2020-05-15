@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            border: 2px solid aquamarine;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>이벤트 리스너 함수 테스트 중...</h1>
+    <div id="one" class="box">div1</div>
+    <div id="two" class="box">div2</div>
+    <script>
+        //id가 one인 div를 click 하면 해당 div의 innerText가 "clicked!"로 바뀌게 해보세요
+
+        document.querySelector("#one").addEventListener("click",function(){
+            this.innerText = "clicked!"
+        });
+
+        document.querySelector("#two").addEventListener("click",function(){
+            this.innerText = "클릭했네요??? 왜??? 클릭했네요??? 왜??? 클릭했네요??? 왜???"
+        })
+    </script>
+</body>
+</html>

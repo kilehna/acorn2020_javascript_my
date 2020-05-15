@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color:whitesmoke;
+            border: 1px solid rgb(127, 179, 250);
+        }
+    </style>
+</head>
+<body>
+    <h1>EventListener 함수 테스트 중... </h1>
+    <div class="box" onclick="clicked()" onmouseover="mouseovered()">div1</div>
+    <div class="box" id="one">div2</div>
+    <script>
+        function clicked(){
+            console.log("클릭했네?");
+        }
+        function mouseovered(){
+            console.log("마우스를 올렸네?");
+        }
+
+        document.querySelector("#one")
+        .addEventListener("click", function(){
+            console.log("클릭했네???");
+        });
+
+        document.querySelector("#one")
+        .addEventListener("mouseover", function(){
+            console.log("마우스를 올렸네???");
+        });
+    </script>
+</body>
+</html>
