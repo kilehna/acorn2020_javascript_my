@@ -23,17 +23,18 @@
 
         document.querySelector("#findBtn").addEventListener("click", function(){
             var fname = document.querySelector("#inputName").value;
-            friends.some(function(element){if(fname == element.name){
+            var isExist=false;
+            friends.forEach(function(element){if(fname == element.name){
                 document.querySelector("#console").innerText=
-                "존재하는 회원입니다. 회원명:"+element.name+"/ 전화번호:"+element.phone+"/ 이메일:"+element.email;
+                element.name+"님의 회원정보입니다. 회원명:"+element.name+"/ 전화번호:"+element.phone+"/ 이메일:"+element.email;
+                isExist=true;
             }
-            else{
-                document.querySelector("#console").innerText=
-                "존재하지 않는 회원입니다."
-            }
-        });    
-            }
-        )
+        }
+        );    
+        if(isExist==false){
+            document.querySelector("#console").innerText=fname+"로 검색된 정보는 없습니다.";
+        }
+    });
     </script>
 </body>
 </html>
