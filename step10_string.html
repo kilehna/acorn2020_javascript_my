@@ -25,13 +25,17 @@
         var result4 = line.split("/");
 
         // back tick(`) 문자를 이용해서 문자열을 만들 수도 있다.
+        // back tick 문자열 형식은 ECMAScript6에서 추가됨
+        // 지금까지 배운것은 ECMAScript5 버전
         var info= `내이름은 길인아 ㅈ졸괴있죠`;
         //-> back tick의 장점- 여러줄로 쓸 수 있ㅇ어서 편리하다
 
         var myname = "길인아";
         var yourname = "이봉하";
 
-        var info2= `나의 이름: ${myname}, 너의 이름: ${yourname}
+        var info2= `나의 이름: ${myname}, 너의 이름: ${yourname}`;
+        //${}변수를 참조해서 문자열을 넣을 수 있다.
     </script>
+
 </body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>공부용</h1>
+    <script>
+    class game{
+        constructor(attri){
+            console.log("생성자가 호출됨!");
+            this.attri=attri;
+        }
+
+        attack(){
+            console.log("궁을 씁니다");
+        }
+
+        set job(info){
+            this.info=info
+        }
+
+        get job(){
+            let att= "직업군은" + this.info + "입니다.";
+            return att;
+        }
+
+        set name(noname){
+            this.noname=noname
+        }
+
+        get name(){
+            let nickname ="이름은" + this.noname + "입니다.";
+            return nickname;
+        }
+    }
+
+    let cha1 = new game ("교");
+    let cha2 = new game ("강");
+    let cha3 = new game ("영");
+    </script>
+
+</body>
+</html>

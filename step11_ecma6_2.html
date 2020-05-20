@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ecmascript6 테스트 중,,,</h1>
+    <script>
+        // car class 정의하기
+        class Car{
+            // 속성(저장소) 정의하기
+            brand= "벤츠";
+            color= "white";
+
+            //기능
+            drive(){
+                console.log(this.brand+"가 달려요");
+            }
+        }
+
+        //car 클래스로 객체를 생성해서 참조값을 각각 car1, car2라는 이름의 변수에 담기
+        let car1 = new Car();
+        let car2 = new Car();
+        let car3 = {
+            brand: "벤츠",
+            color: "red",
+            drive: function(){
+                console.log(this.brand+"가 달려요");
+            }
+        }
+        //설계도를 실체화 시키는 것은 'new'라는 예약어와 함께 클래스명() 명령어.
+
+    </script>
+</body>
+</html>
