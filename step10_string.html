@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>string type 테스트 중...</h1>
+    <script>
+        /*
+            string type도 객체다.
+            객체는 저장소(속성)과 기능(function)으로 구성된다.
+        */
+
+        var line ="abcde12345";
+        //string type의 저장소 참조
+        var size =line.length;
+        //string type의 기능 사용
+        var result = line.replace("e", "EEE");
+        var result2 = line.substring(0,6);
+        // n1번 인덱스부터 n2번 미만의 인덱스의 문자열을 가져온다.(원하는 범위의 문자열을 가져오는것)
+        var result3 = line.split("e");
+        // 해당 문자를 기준으로 문자열을 둘로 나눈다.
+        var result4 = line.split("/");
+
+        // back tick(`) 문자를 이용해서 문자열을 만들 수도 있다.
+        var info= `내이름은 길인아 ㅈ졸괴있죠`;
+        //-> back tick의 장점- 여러줄로 쓸 수 있ㅇ어서 편리하다
+
+        var myname = "길인아";
+        var yourname = "이봉하";
+
+        var info2= `나의 이름: ${myname}, 너의 이름: ${yourname}
+    </script>
+</body>
+</html>
