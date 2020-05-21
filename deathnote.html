@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Death Note</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color: red;
+        }
+        h2{
+            color: white;
+        }
+        ol{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>데스노트 살생부</h1>
+    <h2>죽이고 싶은 사람의 이름을 적어라</h2>
+    <button id="insert">이름 쓰기</button>
+    <ol id="zombie">
+
+    </ol>
+    <script>
+        document.querySelector("#insert").addEventListener("click", function(){
+            let name = prompt("죽이고 싶은 사람의 이름을 적으시오");
+            if(name == null){return;}
+            let zomli = document.createElement("li");
+            zomli.innerText= name +" 사인: 심장마비";
+            document.querySelector("#zombie").append(zomli);
+        });
+    </script>
+</body>
+</html>

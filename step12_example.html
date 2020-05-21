@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>제 목 쓰 기 귀 찮 아</h1>
+    <ul id="friendList">
+
+    </ul>
+    <script>
+        //친구 이름이 들어있는 배열
+        const names=["길","봉","심","장","홍","정"]
+        /*
+            배열에 들어있는 친구 이름을 이용해서 
+            <li>친구이름</li>
+            와 같은 요소를 동적으로 만들어서
+            ul 요소에 append 해보세요. (페이지 로딩 시점에)
+        */
+    
+        names.forEach(function(element){
+            let f1= document.createElement("li");
+            f1.innerText=element+"입니다.";
+            document.querySelector("#friendList").append(f1);
+        });
+    </script>
+</body>
+</html>

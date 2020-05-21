@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>굳이..제목을 붙일 이유를..못 찾겠습니다..ㅁ-ㅁ</h1>
+    <button id="testBtn">테.스.트</button>
+    <script>
+        //인자로 전달되는 수의 제곱값을 리턴해주는 익명함수 1
+        let a = function(num1){
+            return num1*num1;
+        };
+
+        //인자로 전달되는 숫자의 제곱값을 리턴해주는 익명함수2
+        let b = (num1)=>{
+            return num1 * num1;
+        }
+        // ()=>{} 역시 함수의 일종.
+        // 애로우 함수라고 한다.
+        // 모양은 다르지만 기능은 a와 b가 같다.
+
+        //인자로 전달되는 숫자의 제곱값을 리턴해주는 익명함수2(완전 축약 버젼)
+        let c = num1=>num1*num1;
+
+        //버튼을 눌렀을 때 호출되는 애로우 함수  등록하기.
+        document.querySelector("#testBtn")
+        .addEventListener("click",()=>{
+            console.log("버튼을 눌렀군요?")
+        });
+        //function(){} = ()=>{}
+
+        const nums=[1,2,3,4,5,6,7,8,9,10];
+
+        // 익명의 함수를 더욱 간결하게: let result=nums.filter(function(item){});
+        let result=nums.filter((item)=>{
+            return item%2 == 0
+        });                                                                                                                                                                       
+
+        let result2=nums.filter(item=>item%3==0);
+
+        nums.forEach((item, index)=>{
+            console.loh(item+ " |" +ine3s);
+        });
+    </script>
+</body>
+</html>
