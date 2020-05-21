@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>제목... 제목은 중요합니다 그것이 "제목"이니까...</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>주소</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>길리드리히</td>
+                <td>상수시 궁</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        let td1=document.createElement("td");
+        td1.innerText="봉뚜와네뜨"
+        let td2=document.createElement("td");
+        td2.innerText="베르사이유 궁"
+        let tr=document.createElement("tr");
+        tr.append(td1);
+        tr.append(td2);
+        document.querySelector("tbody").append(tr);
+    </script>
+</body>
+</html>

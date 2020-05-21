@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>대충 제목이라는 내용</h1>
+    <input type="text" id="inputNum" placeholder="번호 입력..."/>
+    <input type="text" id="inputName" placeholder="이름 입력..."/>
+    <input type="text" id="inputAddr" placeholder="주소 입력..."/>
+    <button id="addBtn">추가</button>
+    <h1>추가된 회원 목록입니다.</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>이름</th>
+                <th>주소</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script>
+        document.querySelector("#addBtn").addEventListener("click", function(){
+            let num = document.querySelector("#inputNum").value;
+            let name = document.querySelector("#inputName").value;
+            let addr = document.querySelector("#inputAddr").value;
+           
+            let td1=document.createElement("td");
+            td1.innerText= num
+            let td2=document.createElement("td");
+            td2.innerText= name
+            let td3=document.createElement("td");
+            td3.innerText= addr
+            let tr=document.createElement("tr");
+            tr.append(td1);
+            tr.append(td2);
+            tr.append(td3);
+            document.querySelector("tbody").append(tr);
+            tr.addEventListener("click", function(){
+                this.remove();
+            })
+        })
+    </script>
+</body>
+</html>

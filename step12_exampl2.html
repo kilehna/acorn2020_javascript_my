@@ -26,7 +26,8 @@
             document.querySelector("#toDoList").append(newLi);
             newLi.addEventListener("click",function(){
                 console.log("li를 클릭했네?");
-                this.remove();
+                let reco = confirm("정말 삭제하시겠습니까?")
+                if(reco==true){this.remove();}
             });
             //this를 쓰기 위해서는 function을 써야함. 오징어 함수는 불가능.
         });
